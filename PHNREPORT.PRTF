@@ -1,0 +1,61 @@
+000100190314     A          R HEADINGS                                                                          
+000200190313     A                                  2  6'User:'                                                 
+000300190313     A                                  1  1'Timestamp:'                                            
+000400190313     A                                  3  3'Server:'                                               
+000500190313     A                                  1105'Page:'                                                 
+000600190313     A                                  1112PAGNBR                                                  
+000700190313     A            TIMESTAMP       Z     1 12                                                        
+000800190313     A            USER          10      2 12                                                        
+000900190313     A            SERVER        10      3 12                                                        
+001000190313     A                                  2 48'P H O N E   L O G   R E P O R T'                       
+001100190313     A                                  5  3'Sales'                                                 
+001200190313     A                                  6  4'ID'                                                    
+001300190313     A                                  5 11'Customer'                                              
+001400190313     A                                  5 27'Customer Name'                                         
+001500190313     A                                  6 11'Number'                                                
+001600190313     A                                  6 78'Called'                                                
+001700190313     A                                  5 59'Telephone'                                             
+001800190313     A                                  5 77'Last Date'                                             
+001900190313     A                                  5 90'Oldest Call'                                           
+002000190313     A                                  6 94'Date'                                                  
+002100190313     A                                  5103'Next Call'                                             
+002200190313     A                                  6105'Date'                                                  
+002300190314     A                                  7131'*'                                                     
+002400190314     A          R DETAIL                    SPACEB(1)                                               
+002500200324     A            CSTSLN    R              3REFFLD(CONTACTW20/CSTSLN +                              
+002600200324     A                                      BCI433LIB/CONTACTW20)                                   
+002700190313     A            CSTNUM    R             11                                                        
+002800200324     A                                      REFFLD(CUSTOMER20/CSTNUM +                              
+002900200324     A                                      BCI433LIB/CUSTOMER20)                                   
+003000200324     A            CSTNAM    R             22REFFLD(CUSTOMER20/CSTNAM +                              
+003100200324     A                                      BCI433LIB/CUSTOMER20)                                   
+003200200324     A            CSTPHN    R             57REFFLD(CONTACTW20/CSTPHN +                              
+003300200324     A                                      BCI433LIB/CONTACTW20)                                   
+003400200324     A            PHNLDC    R             77REFFLD(CONTACTW20/PHNLDC +                              
+003500200324     A                                      BCI433LIB/CONTACTW20)                                   
+003600190313     A            FLAG           8        91                                                        
+003700190313     A            NEXTCDATE       L      103                                                        
+003800190313     A          R SUMMARY                   SPACEB(3)                                               
+003900190313     A                                    12'S U M M A R Y   I N F O R M A T I -                    
+004000190313     A                                      O N'                                                    
+004100200324     A                                     2'CONTACTW20 Total Records:'                             
+004200190313     A                                      SPACEB(2)                                               
+004300190313     A            CONTACTT       5  0     27EDTCDE(1)                                               
+004400190313     A                                    44'Oldest Last Callback Date:'                            
+004500190313     A            OLDESTDATE      L       71                                                        
+004600200324     A                                     2'CUSTOMER20 Total Records:'                             
+004700190313     A                                      SPACEB(1)                                               
+004800190313     A            CUSTOMERT      5  0     27EDTCDE(1)                                               
+004900190313     A                                    39'Most Recent Last Callback Date:'                       
+005000190313     A            RECENTDATE      L       71                                                        
+005100190313     A                                     2'Total Records with an Unknown Last-                    
+005200190313     A                                       Callback Date:'                                        
+005300190313     A                                      SPACEB(2)                                               
+005400190313     A            UNKNOWNT       5  0     52EDTCDE(1)                                               
+005500000000                                                                                                    
+005600190313     A*%%RS+<record-sequences>                                                                      
+005700190313     A*%%RS+ <sequence name="Untitled">                                                             
+005800190313     A*%%RS+  <device type="printer" width="132" height="66" />                                     
+005900190313     A*%%RS+  <record-write record-format="SUMMARY" />                                              
+006000190313     A*%%RS+ </sequence>                                                                            
+006100190313     A*%%RS </record-sequences>                                                                     
